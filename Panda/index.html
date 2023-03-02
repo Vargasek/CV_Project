@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Moja strona html</title>
+</head>
+<body class="color2 image">
+    <ul>
+        <li data-target="home" class="elements-l"><a href="#home">Home</a></li>
+        <li data-target="news" class="elements-l"><a href="#news">News</a></li>
+        <li data-target="contact" class="elements-l"><a href="#contact">Contact</a></li>
+        <li data-target="about" class="elements-r active"><a href="#about">About</a></li>
+      </ul>
+      
+    <div class="main-size section">
+        <div class="on-left">
+            <div class="div-f">
+            <p>
+                <b class="h1">
+                Wymagany formularz do zakupu LEGO
+                </b>
+            </p>
+            <form method="post">
+                <ol>
+                    <li>
+                        <label for="name">imię:</label>
+                        <br>
+                        <input type="text" id="name" name="name" placeholder="Twoje Imię">
+                    </li>
+                    <li>
+                        <label for="surname">nazwisko:</label>
+                        <br>
+                        <input type="text" id="surname" name="surname" placeholder="Twoje Nazwisko">
+                    </li>
+                    <li>
+                        <label for="birthday">data urodzenia:</label>
+                        <br>
+                        <input type="date" id="birthday" name="birthday">
+                    </li>
+                    <li>
+                        <label for="animal">ulubione zwierzątko:</label>
+                        <br>
+                        <select id="animal" name="animal">
+                            <option selected value="">---</option>
+                            <option value="Słonik">Słonik</option>
+                            <option value="Żółwik">Żółwik</option>
+                            <option value="Pieseczek">Pieseczek</option>
+                            </select>
+                    </li>
+                </ol>
+                <button type="submit" onclick="setElements()" class="button" > Wyślij</button>
+            </form>
+            </div>
+            <div id="contact" class="text-left">
+                <h2>dane kontaktowe:</h2>
+                <p><b> Piotr Kuraszkiewicz <br>Os. Mielżyńskiego 132/13 <br>62-020 Swarzędz</b></p>
+            </div>
+        </div>
+        <div>
+            <div id="home">
+                <img src="panda.jpg" alt="Ratujmy pandy" style="opacity: 0.5">
+            </div>
+            
+        </div>
+        <div>
+            <iframe class = "elements-r" src="http://www.wielkopolska.policja.gov.pl/" frameborder="5"></iframe>
+        </div>   
+    </div>
+    <div class="image"></div>
+    
+    
+<script src="script.js"></script>
+
+</body>
+</html>
